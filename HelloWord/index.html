@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app="listaTelefonica">
+  <head>
+    <meta charset="utf-8">
+    <title>Hello World</title>
+    <script src="..\angular\angular.js"></script>
+    <script src="..\Bootstrap\css\bootstrap.css"></script>
+    <script>
+      angular.module("listaTelefonica",[]);
+      angular.module("listaTelefonica").controller("listaTelefonicaCtrl", function ($scope) {
+        $scope.app = "Lista Telefonica";
+      });
+    </script>
+  </head>
+  <body>
+    <div ng-controller="listaTelefonicaCtrl">
+
+        {{app}}
+
+    </div>
+
+  </body>
+</html>
